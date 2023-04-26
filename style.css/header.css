@@ -1,0 +1,180 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(213, 213, 213);
+
+    z-index: 100;
+}
+
+.secao-esquerda{
+    display: flex;
+    align-items: center;
+}
+
+.menu-hamburguer{
+    cursor: pointer;
+    height: 24px;
+    margin: 0 24px 0 24px;
+}
+
+.yt-logo{
+    height: 20px;
+}
+
+.secao-meio{
+    flex: 1;
+    margin: 0 35px 0 70px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.barra-pesquisa{
+    flex: 1;
+    height: 36px;
+    width: 0;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(191, 191, 192);
+    border-radius: 2px;
+}
+
+.barra-pesquisa::placeholder{
+    font-family: roboto arial sans-serif;
+    font-size: 16px;
+}
+
+.botao-pesquisa{
+    cursor: pointer;
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-radius: px;
+    margin-left: -1px;
+    margin-right: 10px;
+    border-left: none;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(191, 191, 192);
+    position: relative;
+}
+
+.botao-pesquisa,
+.botao-voz,
+.upload-icon-container,
+.apps-container,
+.notificacao-div,
+.foto-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.botao-pesquisa .dica,
+.botao-voz .dica,
+.upload-icon-container .dica,
+.apps-container .dica,
+.notificacao-div .dica,
+.foto-menu-container .dica {
+    font-family: Roboto Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 7px 4px 7px;
+    border-radius: 3px;
+    font-size: 12px;
+    bottom: -30px;
+    left: -2px;
+    opacity: 0;
+    transition: opacity 0.20s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.botao-pesquisa:hover .dica,
+.botao-voz:hover .dica,
+.upload-icon-container:hover .dica,
+.apps-container:hover .dica,
+.notificacao-div:hover .dica,
+.foto-menu-container:hover .dica{
+    opacity: 1;
+}
+
+.botao-voz{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;    
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.icon-pesquisa{
+    height: 25px;
+    margin-top: 4px;
+
+}
+
+.icon-voz{
+    height: 24px;
+
+}
+
+.secao-direita{
+    width: 180px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.upload-icon{
+    height: 24px;
+    cursor: pointer;
+}
+
+.yt-apps-icon{
+    height: 24px;
+    cursor: pointer;
+}
+
+.notificacao-icon{
+    height: 24px;
+    cursor: pointer;
+}
+
+.notificacao-div{
+    position: relative;
+
+}
+
+.notificacao-numero{
+    position: absolute;
+    top: -3px;
+    right: -4px;
+    background-color: rgb(179, 13, 13);
+    color: white;
+    font-family: roboto, arial;
+    font-size: 11px;
+    padding: 2px 4px 2px 4px;
+    border-radius: 50%;
+}
+
+.foto-menu-icon{
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
